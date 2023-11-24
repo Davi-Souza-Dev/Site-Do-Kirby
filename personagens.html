@@ -1,0 +1,237 @@
+	<!DOCTYPE html>
+<html>
+<head>
+	<title>Personagens</title>
+	<style type="text/css">
+		body{
+			background-color:#FFB6C1;
+		}	
+		#topo{
+			background-color: #FFB6C1;
+			height: 100px;
+		}
+		#inicio{
+			background-color: #e65597;
+			border-color: #FF1493;
+			border-style: dashed;
+			width: 40%;
+			height: 70px;
+			border-radius: 20px;
+			margin: 0 auto;	
+			font-size: 70px;
+			text-align: center;
+			font-family: cc-zoinks-medium;
+		}
+		a{
+			text-decoration: none;
+		}
+		#voltar{
+			margin-top: 10px;
+			background-color: #e65597;
+			border-color: #FF1493;
+			border-style: dashed;
+			width: 40%;
+			height: 70px;
+			border-radius: 20px;
+			font-size: 70px;
+			text-align: center;
+			font-family: cc-zoinks-medium;
+		}
+		#voltar:hover{
+			background-color: black;
+			border-color: red;
+			color: red;
+			border-style: solid;
+			padding: 5px;
+			width: 40%;
+			height: 70px;
+			border-radius: 20px;	
+			font-size: 70px;
+			text-align: center;
+			transition: 0.5s;
+			font-family: cc-zoinks-medium;
+		}
+		@font-face{
+			font-family: "cc-zoinks-medium";
+			src: url("fontes/cc-zoinks-medium.ttf");
+		}
+		.cor1{
+			margin-top: 10px;
+			height: 300px;
+			background-color: #b53f9f;
+		}
+		.cor2{
+			margin-top: 10px;
+			background-color: #e65597;
+			height: 300px;
+		}
+		.cor1:hover{
+			padding: 10px;
+			transition: 0.5s;
+			margin-top: 10px;
+			background-color: #b53f9f;
+			height: 300px;
+			border-radius: 50px;
+		}
+		.cor2:hover{
+			padding: 10px;
+			transition: 0.5s;
+			margin-top: 10px;
+			background-color: #e65597;
+			height: 300px;
+			border-radius: 50px;
+		}
+		.foto1{
+			border-color: black;
+			border-style: dashed;
+			float: left;
+			margin-left: 10px;
+			margin-top: -200px;
+		}
+		.foto1:hover{
+			border-radius: 400px;
+			border-color: lightpink;
+			border-style: double; 
+			margin-left: 10px;
+			margin-top: 10px;
+			transition: 0.5s;
+			margin-top: -220px;
+			padding: 10px;
+		}
+		.foto2{
+			border-color: black;
+			border-style: dashed;
+			float: right;
+			margin-right: 10px;
+			margin-top: -220px;
+		}
+		.foto2:hover{
+			border-radius: 400px;
+			border-color: lightpink;
+			border-style: solid; 
+			margin-right: 2px;
+			margin-top: -10px;
+			transition: 0.5s;
+			margin-top: -240px;
+			padding: 10px;
+		}
+		.nome{
+			background-color: #e24b8f;
+			border-radius: 50px;
+			border-color: #ff0bff;
+			border-style: dashed;
+			height: 50px; 
+			width: 30%;
+			font-size: 50px;
+			font-family: cc-zoinks-medium;
+			text-align: center;
+		}
+		.text{
+			border-radius: 10px;
+			width: 65%;
+			height: 200px;
+			background-color: azure;
+			margin-top: 10px;
+			font-family: cc-zoinks-medium;
+		}
+		@font-face{
+			font-family: "cc-zoinks-medium";
+			src: url(fontes/cc-zoinks-medium.ttf);
+
+		}
+		.text:hover{
+			border-radius: 10px;
+			width: 65%;
+			height: 200px;
+			transition: 0.4s;
+			border-color: #ff0bff;
+			border-style: solid;
+			background-color: black;
+			color: white;
+		}
+		#Meta-Knight{
+			background-color: #e24b8f;
+			border-radius: 50px;
+			border-color: #ff0bff;
+			border-style: dashed;
+			height: 50px; 
+			width: 30%;
+			font-size: 50px;
+			font-family: cc-zoinks-medium;
+			text-align: center;
+		}
+		#Meta-Knight:hover{
+			transition: 1s;
+			background-color:#000000;
+			color: #ffc100;
+			border-radius: 50px;
+			border-color: 	#818181;
+			border-style: solid;
+			height: 50px; 
+			width: 30%;
+			font-size: 50px;
+			font-family: cc-zoinks-medium;
+			text-align: center;
+		}
+		#Meta-Knight-Fundo{
+			margin-top: 10px;
+			background-color: #e65597;
+			height: 300px;
+		}
+		#Meta-Knight-Fundo:hover{
+			margin-top: 10px;
+			background-color: #000000;
+			height: 300px;
+			border-radius: 50px;
+			border-color: #ffc100;
+			border-style: solid;
+			transition: 0.5s;
+		}
+	</style>
+</head>
+<body>
+	<div id="topo">
+		<div id="inicio">PERSONAGENS</div>
+	</div>
+	<div class="cor1">
+		<center>
+			<div class="nome">KIRBY</div>
+			<div class="text">Kirby foi concebido por Masahiro Sakurai, um designer de videogame que trabalhava na HAL Laboratory para projetar um jogo para o Game Boy da Nintendo. Ele foi originalmente criado como um sprite temporário para o jogo, originalmente intitulado "Twinkle Popo" (ティンクル・ポポ Tinkuru Popo). Com o tempo, Sakurai começou a gostar do sprite temporário e o preferiu à concepção do protagonista original do jogo para o qual estava sendo projetado, então Kirby se tornou a estrela de seu primeiro jogo. Apesar dos desenvolvedores manterem o modelo de Kirby, ele ficou conhecido como ポポポ (Popopo) por um tempo antes de ser renomeado para "Kirby". O jogo foi renomeado para 星のカービィ (Hoshi no Kābī), que significa "Kirby das Estrelas" no Japão, e ficou conhecido internacionalmente como Kirby's Dream Land. O nome original de Kirby, Popopo, seria mais tarde referenciado em Kirby Mass Attack, uma vez que é definido nas Popopo Islands.	</div>
+		</center>
+		<img class="foto1" src="imagens/kirby.jpg" height="200" />
+	</div>
+	<div class="cor2">
+		<center>
+			<div class="nome">KING DEDE</div>
+			<div class="text">
+				King Dedede ( King DeDeDe em alguns jogos mais antigos; às vezes abreviado para Dedede ) é uma criatura corpulenta, azul, parecida com um pinguim, que empunha um martelo e se proclama rei da Dream Land . Ele é um personagem recorrente que serve como "arqui-inimigo" de Kirby [1] e geralmente é enfrentado como um chefe . Embora ele frequentemente se envolva em problemas, principalmente envolvendo o roubo de comida de outras pessoas, ele também realizou atos nobres, como tentar selar Nightmare , ajudar Kirby na batalha contra a Rainha Sectonia e acompanhar Kirby em várias de suas aventuras. Por isso é considerado protagonista, apesar de sua ganância e egoísmo. O rei Dedede mora em um castelo no topo de uma montanha com uma comitiva de Waddle Dees atuando como seus servos.
+			</div>
+		</center>
+		<img class="foto2" src="imagens/KingDede.png" height="200" />
+	</div>
+	<div class="cor1">
+		<center>
+			<div class="nome">Waddle Dee</div>
+			<div class="text">
+				Waddle Dees são uma espécie de criaturas muito pacíficas que são comuns na Dream Land , na região mais ampla da Popstar e em muitos outros planetas . Nomeados por seu andar bamboleante, Waddle Dees são quase do mesmo tamanho de Kirby e têm um corpo ligeiramente em formato de pêra com pele vermelho-alaranjada, tocos sem dedos no lugar dos braços e dois pés que são tipicamente amarelos, mas também podem ser bronzeados ou castanhos. laranja claro. Seus rostos são bronzeados e consistem em dois olhos castanhos escuros, duas bochechas vermelhas e nenhuma boca ou nariz (embora Waddle Dees seja conhecido por falar e comer apesar de não ter boca). Embora a maioria dos Waddle Dees sejam laranja ou vermelhos, também existem Waddle Dees verdes, amarelos, azuis ou dourados .
+			</div>
+		</center>
+		<img class="foto1" src="imagens/wadlee dee.png" height="200" />
+	</div>
+	<div id="Meta-Knight-Fundo">
+		<center>
+			<div id="Meta-Knight">Meta Knight</div>
+			<div class="text">
+				Meta Knight (ocasionalmente formatado como Meta-Knight em mídias mais antigas) é um espadachim alado mascarado que atua como personagem recorrente na série Kirby , aparecendo pela primeira vez em Kirby's Adventure . Ele é uma figura misteriosa e sua história não é claramente mostrada na série de jogos. As parcelas em que ele aparece geralmente o apresentam como um chefe , mas desde Kirby: Nightmare in Dream Land , houve casos em que ele pode ser jogado em modos alternativos, ou até mesmo se juntar diretamente a Kirby . Embora a maioria de seus esquemas tenha origem em boas intenções, as maneiras pelas quais ele tenta atingir seus objetivos são muitas vezes muito extremas e mal compreendidas pelos outros. Meta Knight também é o líder de um bando de guerreiros conhecido simplesmente como Meta-Knights , e ele possui um navio de guerra gigante projetado em sua homenagem, conhecido como Halberd .
+
+
+			</div>
+		</center>
+		<img class="foto2" src="imagens/metaknight.png" height="200" />
+	</div>
+	<a href="index.html">
+		<div id="voltar">VOLTAR</div>
+	</a>
+	
+</body>
+</html>

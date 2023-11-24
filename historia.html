@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Historia</title>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+            <script type="text/javascript">// <![CDATA[
+            $(document).ready(function() {
+            function filterPath(string) {
+            return string
+            .replace(/^\//,'')
+            .replace(/(index|default).[a-zA-Z]{3,4}$/,'')
+            .replace(/\/$/,'');
+            }
+            $('a[href*=#]').each(function() {
+            if ( filterPath(location.pathname) == filterPath(this.pathname)
+            && location.hostname == this.hostname
+            && this.hash.replace(/#/,'') ) {
+            var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+            var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+            if ($target) {
+            var targetOffset = $target.offset().top;
+            $(this).click(function() {
+            $('html, body').animate({scrollTop: targetOffset}, 1500); //tempo
+            return false;
+            });
+            }
+            }
+            });
+            });
+            // ]]></script>
+	<style type="text/css">
+		.bloco1{
+			height: 350px;
+			width: 80%;
+			background-color: #FFC0CB;
+			border-radius: 50px;
+		}
+		.bloco2{
+			height: 350px;
+			width: 80%;
+		}
+		a{
+			text-decoration: none;
+		}
+		#voltar{
+			margin-top: 10px;
+			background-color: #e65597;
+			border-color: #FF1493;
+			border-style: dashed;
+			width: 40%;
+			height: 70px;
+			border-radius: 20px;
+			font-size: 70px;
+			text-align: center;
+			font-family: cc-zoinks-medium;
+		}
+		@font-face{
+			font-family: "cc-zoinks-medium";
+			src: url("fontes/cc-zoinks-medium.ttf");
+		}
+		header{
+			background-color: #e65597;
+			height: 80px;
+			width: 40%;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			font-size:  42px;
+			font-family: cc-zoinks-medium;
+			border-radius: 20px;
+			border-bottom-style: solid;
+			border-left-style: solid;
+		}
+		header:hover{
+			background-color: #e65597;
+			height: 80px;
+			width: 40%;
+			font-family: cc-zoinks-medium;
+			border-radius: 20px;
+			border-style: solid;
+			transition: 0.2s;
+			text-transform: uppercase;
+		}
+		section{
+			background-color:#FFFAFA;
+			border-color: #EE82EE;
+			height: 200px;
+			width: 60%;
+			float: left;
+			margin-top: 10px;
+			margin-left: 10px;  
+			border-radius: 10px;
+			text-align: justify;
+			border-style: outset;
+		}
+		aside{
+			background-color: #e65597;
+			height: 250px;
+			width: 25%;
+			margin-right: 100px; 
+			float: right; 
+			border-radius: 50px;
+			border-color: #EE82EE;
+			border-style: solid;
+			text-align: center;
+		}
+		img{
+			height: 250px;
+			width: 100%;
+			border-color: #EE82EE;
+			border-radius: 50px;
+		}
+		img:hover{
+			height: 250px;
+			width: 100%;
+			border-color: #EE82EE;
+			border-radius: 50px;
+			margin-top: -10px;
+			transition: 0.10s;
+		}
+		.P_Direita{
+			background-color:#FFFAFA;
+			border-color: #EE82EE;
+			height: 200px;
+			width: 60%;
+			float: right;
+			margin-top: 10px;
+			margin-left: -100px;
+			margin-right:100px;  
+			border-radius: 10px;
+			text-align: justify;
+			border-style: outset;
+		}
+		.IMG_Esquerda{
+			background-color: #e65597;
+			height: 250px;
+			width: 25%;;
+			margin-left: 10px;
+			float: left; 
+			border-radius: 50px;
+			border-color: #EE82EE;
+			border-style: solid;
+			text-align: center;
+		}
+	</style>
+</head>
+<body bgcolor="#FFB6C1">
+	<center>
+		<div class="bloco1">
+			<center>
+				<header>Criação e origem do nome</header>
+			</center>
+			<section>
+				Masahiro Sakurai conceituou seu primeiro projeto de jogo como simples, para que jogadores iniciantes pudessem completá-lo facilmente e, como resultado, incluiu a capacidade de usar inimigos como armas, bem como evitar obstáculos voando sobre eles. Originalmente, o personagem do jogador agarrava os inimigos com uma língua comprida, mas isso foi alterado para inalar e depois engoli-los ou cuspi-los. Durante o desenvolvimento inicial do que se tornou Kirby's Dream Land , os desenvolvedores do HAL Laboratory criaram um sprite de espaço reservado destinado a transmitir essas ideias para uma apresentação. Este sprite de espaço reservado, uma pequena bolha redonda com um rosto sorridente, tornou-se popular entre a equipe e, com alguns ajustes, acabou se tornando o design final. Notavelmente, os desenhos do personagem de Sakurai não tinham marcas de blush, sendo estas adicionadas posteriormente por um artista diferente.</section>
+			<aside>
+				<img src="imagens/Twinkle_Popo_Weekly_Famitsu_0155_ad_scan.jpg" alt="Twinkle_Popo_Weekly_Famitsu_0155_ad_scan">
+			</aside>
+		</div>
+		<div class="bloco2">
+			<center>
+				<header>Características </header>
+			</center>
+			<section class="P_Direita">
+				Apesar de estar entre os mascotes de videogame da Nintendo de aparência mais simples, Kirby tem uma quantidade surpreendentemente grande de detalhes em seu personagem, tanto no que diz respeito às particularidades de sua anatomia quanto à sua personalidade e história de fundo (tanto que existe uma página separada para documentá-los mais completamente). Apesar disso, Kirby é normalmente apresentado - tanto na aparência quanto na personalidade - como simples, divertido e direto, embora com algumas surpresas aqui e ali. Seu corpo redondo e rosado não tem mais de 20 cm de altura, e em seu estado normal, sua velocidade de movimento é apenas modesta, principalmente quando ele inspira ar para pairar acima do solo ou tenta nadar . água . Onde Kirby se destaca é sua habilidade de inspiração característica, que ele tem usado desde sua estreia em Kirby's Dream Land , permitindo-lhe engolir inimigos menores inteiros e devolver os projéteis de inimigos mais fortes contra eles.</section>
+			<aside class="IMG_Esquerda">
+				<img src="imagens/K64_Kirbys_Quest_scene_3.png" alt="K64_Kirbys_Quest_scene_3" >
+			</aside>
+		</div>
+	</center>
+	<center>
+		<div class="bloco1">
+			<center>
+				<header>Kirby's Dream Land</header>
+			</center>
+			<section>
+				Kirby faz sua estreia em Kirby's Dream Land , onde enfrenta seu rival King Dedede pela primeira vez na série. O jogo o retrata como um garoto jovem e ágil que ajuda ansiosamente seus colegas Dream Landers em sua crise com King Dedede. O travesso Rei não apenas roubou toda a comida da Dream Land , mas também raptou as Sparkling Stars da terra . Sem mais hesitações, Kirby sai para viajar pelas cinco áreas da Dream Land, recuperar as Sparkling Stars de cada um dos capangas do King Dedede, derrotar o King Dedede e devolver a Dream Land sua comida e suas Sparkling Stars. A arte internacional da caixa de Kirby's Dream Land retrata Kirby com pele branca, como ele aparece no jogo, em oposição à sua cor rosa, sua marca registrada (veja acima ). O jogo também é o primeiro a mencionar a falta de talento para cantar de Kirby, embora não seja tão exagerado como em títulos posteriores. Neste jogo, os inimigos explodem de tanto rir ao ouvir Kirby cantar desafinado, em vez de serem fisicamente prejudicados por suas músicas.</section>
+			<aside>
+				<img src="imagens/KDL_Green_Greens_screenshot.png" alt="KDL_Green_Greens_screenshot">
+			</aside>
+		</div>
+	</center>
+	<a href="index.html">
+		<div id="voltar">VOLTAR</div>
+	</a>
+</body>
+</html>

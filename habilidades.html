@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Habilidades</title>
+	<style type="text/css">
+		a{
+			text-decoration: none;
+		}
+		#voltar{
+			margin-top: 10px;
+			background-color: #e65597;
+			border-color: #FF1493;
+			border-style: dashed;
+			width: 40%;
+			height: 70px;
+			border-radius: 20px;
+			font-size: 70px;
+			text-align: center;
+			font-family: cc-zoinks-medium;
+		}
+		#voltar:hover{
+			background-color: black;
+			border-color: red;
+			color: red;
+			border-style: solid;
+			padding: 5px;
+			width: 40%;
+			height: 70px;
+			border-radius: 20px;	
+			font-size: 70px;
+			text-align: center;
+			transition: 0.5s;
+			font-family: cc-zoinks-medium;
+		}
+		#topo{
+			background-color: #FFB6C1;
+			height: 100px;
+		}
+		#desc{
+			background-color: #FFB6C1;
+			height: 190px;
+		}
+		#hab{
+			background-color: #FFB6C1;
+			height: 1250px;
+		}
+		#inicio{
+			background-color: #e65597;
+			border-color: #FF1493;
+			border-style: dashed;
+			width: 40%;
+			height: 70px;
+			border-radius: 20px;
+			margin: 0 auto;	
+			font-size: 70px;
+			text-align: center;
+			font-family: cc-zoinks-medium;
+		}
+		#Sinicio{
+			background-color: #e65597;
+			border-color: #FF1493;
+			border-style: dashed;
+			width: 40%;
+			height: 70px;
+			border-radius: 20px;
+			margin: 0 auto;	
+			font-size: 70px;
+			text-align: center;
+			font-family: cc-zoinks-medium;
+		}
+		#Sinicio:hover{
+			background-color: #e65597;
+			border-color: #FF1493;
+			border-style: solid;
+			width: 40%;
+			height: 70px;
+			border-radius: 20px;
+			margin: 0 auto;	
+			color: gold;
+			font-size: 70px;
+			text-align: center;
+			font-family: cc-zoinks-medium;
+		}
+		@font-face{
+			font-family: "cc-zoinks-medium";
+			src: url("fontes/cc-zoinks-medium.ttf");
+		}
+		#text{
+			background-color: #FFC0CB;
+			width: 720px;
+			height: 100px;
+			margin-top: 20px;
+			border-radius: 10px;
+			border-style: dotted;
+			border-color: #FF69B4;
+			font-size: 25px;
+		}
+		.molde{
+			background-color: black;
+			width: 200px;
+			height: 350px;
+			border-radius: 	20px;
+			margin-left: 10px;
+		}
+		.base{
+			background-color: #FFC0CB;
+			width: 	195px;
+			height: 345px;
+			border-radius:20px;
+			margin: 0 auto;
+		}
+		.base:hover{
+			background-color: pink;
+			width: 	200px;
+			height: 350px;
+			border-radius:20px;
+			margin: 0 auto;
+			border-color: black;
+			transition: 0.2s;
+
+		}
+		.imagem{
+			background-color: #E0FFFF;
+			width: 	171px;
+			height: 98px;
+			margin-top: -250px;
+			border-style: solid;
+			border-color: #d1a3ab;
+			border-radius: 40px;
+		}
+		.descricao{
+			background-color: #E0FFFF;
+			width: 	141px;
+			height: 110px;		
+			margin: 13px;
+			border-radius: 5px;
+			border-color: #d1a3ab;
+			border-style: double;
+			font-size: 	15px;
+			text-align: center;
+			font-family: kirby-classic;
+		}
+		@font-face{
+			font-family: kirby-classic;
+			src: url("fontes/kirby-classic.ttf");
+		}
+		.icon{
+			background-color: black;
+			width: 40px;
+			height: 40px;
+			border-radius: 40px;
+			margin-left: 10px;
+			margin-top: -14px;	
+			border-style: dashed;	
+			border-color: #d1a3ab;
+		}
+		.linha{
+			background-color: black;
+			width: 80%;
+			height: 7px;
+			border-radius: 	6px;
+			margin-top: -290px;
+		}
+		.nome{
+			margin-top: -50px;
+			width: 80%;
+			height: 7px;
+			font-family: cc-zoinks-medium;
+			font-size: 	40px;
+			margin-left: 30px;	
+		}
+		.Smolde{
+			background-color: #916e04;
+			width: 250px;
+			height: 400px;
+			border-radius: 	20px;
+			margin-left: 10px;
+		}
+		.Sbase{
+
+			background-color: #fce742;
+			width: 	245px;
+			height: 395px;
+			border-radius:20px;
+			margin: 0 auto;
+		}
+		.Simagem{
+			background-color: #E0FFFF;
+			width: 	200px;
+			height: 150px;
+			margin-top: -310px;
+			border-style: solid;
+			border-color: #d1a3ab;
+			border-radius: 40px;
+		}
+		.Simagem:hover{
+			text-decoration: none;
+			text-transform: uppercase;
+			padding: 10px;
+			border-radius: 10px;
+			border-style: pink;
+			background: pink;
+			border-color: black;
+			color: black;
+			transition: 0.5s;
+		}
+		.Sdescricao{
+			background-color: #E0FFFF;
+			width: 	80%;
+			height: 150px;		
+			margin: 15px;
+			border-radius: 50px;
+			border-color: #d1a3ab;
+			border-style: double;
+			font-size: 	15px;
+			text-align: center;
+			font-family: kirby-classic;
+		}
+		@font-face{
+			font-family: kirby-classic;
+			src: url("fontes/kirby-classic.ttf");
+		}
+		.Sicon{
+			background-color: black;
+			width: 55px;
+			height: 55px;
+			border-radius: 55px;
+			margin-left: 10px;
+			margin-top: -32px;	
+			border-style: dashed;	
+			border-color: #d1a3ab;
+		}
+		.Slinha{
+			background-color: black;
+			width: 80%;
+			height: 7px;
+			border-radius: 	6px;
+			margin-top: -310px;
+		}
+		.Snome{
+			margin-top: -70px;
+			width: 80%;
+			height: 26px;
+			font-family: cc-zoinks-medium;
+			font-size: 	55px;
+			margin-left: 50px;	
+		}
+		.Snome:hover{
+			margin-top: -70px;
+			width: 80%;
+			height: 26px;
+			font-family: cc-zoinks-medium;
+			font-size: 	55px;
+			color: yellow;
+			border-color: black;
+			text-transform: uppercase;
+			margin-left: 50px;	
+		}
+	</style>
+</head>
+<body bgcolor="#FFB6C1">
+	<div id="topo">
+		<div id="inicio">HABILIDADES</div>
+	</div>
+	<div id="desc">
+		<center>
+			<div id="text">Capacidade de cópia é um termo abrangente que se refere à capacidade registrada de Kirby de herdar e utilizar os poderes e/ou habilidades especiais das entidades que ele engole usando sua inalação . </div>
+		</center>
+	</div>
+	<div id="hab">
+		<center>
+			<table cellpadding="10" cellspacing="10"><!--TABELA DE CARTAS COM HABILIDADES-->
+				<tr>
+					<td>
+						<div class="molde">
+							<center>
+									<div class="base"></div>
+									<div class="imagem">
+										<img src="imagens/habilidades/fire.png" height="100" />				
+									</div>
+
+									<div class="descricao">Kirby ganha a habilidade de cuspir fogo e realizar outros ataques de fogo.</div>
+									<div class="linha"></div>
+									<div class="nome">FIRE  </div>
+							</center>
+								<div class="icon">
+									<center>
+										<img src="imagens/habilidades/fireIcon.png" height="40" />	
+									</center>
+								</div>
+						</div>
+					</td>
+					<td>
+						<div class="molde">
+							<center>
+									<div class="base"></div>
+									<div class="imagem">
+										<img src="imagens/habilidades/hammer.gif" height="100" />				
+									</div>
+
+									<div class="descricao">Kirby pode golpear seus oponentes usando um poderoso martelo de madeira.</div>
+									<div class="linha"></div>
+									<div class="nome">Hammer</div>
+							</center>
+								<div class="icon">
+									<center>
+										<img src="imagens/habilidades/hammerIcon.png" height="40" />	
+									</center>
+								</div>
+						</div>
+					</td>
+					<td>	
+						<div class="molde">
+							<center>
+									<div class="base"></div>
+									<div class="imagem">
+										<img src="imagens/habilidades/fighter.png" height="100" />				
+									</div>
+
+									<div class="descricao">Kirby ganha acesso a uma grande variedade de movimentos baseados em artes marciais.</div>
+									<div class="linha"></div>
+									<div class="nome">Fighter</div>
+							</center>
+								<div class="icon">
+									<center>
+										<img src="imagens/habilidades/fighterIcon.png" height="40" />	
+									</center>
+								</div>
+						</div>
+					</td>
+					<td>	
+						<div class="molde">
+							<center>
+									<div class="base"></div>
+									<div class="imagem">
+										<img src="imagens/habilidades/cutter.png" height="100" />				
+									</div>
+
+									<div class="descricao">
+										Esta e Parasol são as habilidades de cópia mais comuns na série desde Kirby's Return to Dream Land Deluxe .
+									</div>
+									<div class="linha"></div>
+									<div class="nome">Cutter</div>
+							</center>
+								<div class="icon">
+									<center>
+										<img src="imagens/habilidades/cutterIcon.png" height="40" />	
+									</center>
+								</div>
+						</div>
+					</td>
+				</tr>
+				<tr>	
+					<td>
+						<div class="molde">
+							<center>
+									<div class="base"></div>
+									<div class="imagem">
+										<img src="imagens/habilidades/lutador.png" height="100" />				
+									</div>
+
+									<div class="descricao">Esta habilidade funciona de forma semelhante a Backdrop, Suplex e Fighter.</div>
+									<div class="linha"></div>
+									<div class="nome">Lutador</div>
+							</center>
+								<div class="icon">
+									<center>
+										<img src="imagens/habilidades/lutadorIcon.png" height="40" />	
+									</center>
+								</div>
+						</div>
+					</td>
+					<td>
+						<div class="molde">
+							<center>
+									<div class="base"></div>
+									<div class="imagem">
+										<img src="imagens/habilidades/ovni.png" height="100" />				
+									</div>
+
+									<div class="descricao">Nos títulos anteriores, Kirby perderia essa habilidade após sair do estágio em que se encontra.</div>
+									<div class="linha"></div>
+									<div class="nome">Ovni</div>
+							</center>
+								<div class="icon">
+									<center>
+										<img src="imagens/habilidades/ovniIcon.png" height="40" />	
+									</center>
+								</div>
+						</div>
+					</td>
+					<td>	
+						<div class="molde">
+							<center>
+									<div class="base"></div>
+									<div class="imagem">
+										<img src="imagens/habilidades/copy.png" height="100" />				
+									</div>
+
+									<div class="descricao">Kirby é capaz de “escanear” um inimigo e copiar sua essência para ganhar uma nova habilidade.</div>
+									<div class="linha"></div>
+									<div class="nome">Copy</div>
+							</center>
+								<div class="icon">
+									<center>
+										<img src="imagens/habilidades/copyIcon.png" height="40" />	
+									</center>
+								</div>
+						</div>
+					</td>
+					<td>	
+						<div class="molde">
+							<center>
+									<div class="base"></div>
+									<div class="imagem">
+										<img src="imagens/habilidades/lance.png" height="100" />				
+									</div>
+
+									<div class="descricao">A faixa azul de Throw Kirby é idêntica à faixa inicial do Suplex.</div>
+									<div class="linha"></div>
+									<div class="nome">Lançar</div>
+							</center>
+								<div class="icon">
+									<center>
+										<img src="imagens/habilidades/lanceIcon.png" height="40" />	
+									</center>
+								</div>
+						</div>
+					</td>
+				</tr>
+				<tr>	
+					<td>
+						<div class="molde">
+							<center>
+									<div class="base"></div>
+									<div class="imagem">
+										<img src="imagens/habilidades/artist.png" height="100" />				
+									</div>
+
+									<div class="descricao">Artist possui um ataque que, quando usado, faz com que Kirby perca essa habilidade.</div>
+									<div class="linha"></div>
+									<div class="nome">Artist</div>
+							</center>
+								<div class="icon">
+									<center>
+										<img src="imagens/habilidades/artistIcon.png" height="40" />	
+									</center>
+								</div>
+						</div>
+					</td>
+					<td>
+						<div class="molde">
+							<center>
+									<div class="base"></div>
+									<div class="imagem">
+										<img src="imagens/habilidades/sword.png" height="95" />				
+									</div>
+
+									<div class="descricao"> O chapéu de Sword Kirby é uma referência deliberada a Link de The Legend of Zelda .</div>
+									<div class="linha"></div>
+									<div class="nome">Sword</div>
+							</center>
+								<div class="icon">
+									<center>
+										<img src="imagens/habilidades/swordIcon.png" height="40" />	
+									</center>
+								</div>
+						</div>
+					</td>
+					<td>	
+						<div class="molde">
+							<center>
+									<div class="base"></div>
+									<div class="imagem">
+										<img src="imagens/habilidades/wheel.png" height="95" />				
+									</div>
+
+									<div class="descricao">Kirby se transforma em uma roda e pode rolar muito rapidamente.</div>
+									<div class="linha"></div>
+									<div class="nome">Wheel</div>
+							</center>
+								<div class="icon">
+									<center>
+										<img src="imagens/habilidades/wheelIcon.png" height="40" />	
+									</center>
+								</div>
+						</div>
+					</td>
+					<td>	
+						<div class="molde">
+							<center>
+									<div class="base"></div>
+									<div class="imagem">
+										<img src="imagens/habilidades/suplex.png" height="100" />				
+									</div>
+
+									<div class="descricao">Esta habilidade é uma versão atualizada do Backdrop.</div>
+									<div class="linha"></div>
+									<div class="nome">Suplex</div>
+							</center>
+								<div class="icon">
+									<center>
+										<img src="imagens/habilidades/suplexIcon.png" height="40" />	
+									</center>
+								</div>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</center>
+	</div>
+	<div id="Sinicio">SUPER HABILIDADES</div>
+	<div id="desc">
+		<center>
+			<div id="text">Super Habilidades são formas exageradas e poderosas de Habilidades de Cópia normais que são obtidas engolindo "super" inimigos e objetos repletos de estrelas.</div>
+		</center>	
+	</div>
+	</div>
+	<center>	
+		<table>	
+			<tr>
+				<td>
+					<div class="Smolde">
+						<center>
+								<div class="Sbase"></div>
+								<div class="Simagem">
+									<img id="imagemSuper" src="imagens/habilidades/SuperSword.png" height="160" />				
+								</div>
+								<div class="descricao">Kirby ganha uma grande espada que pode destruir inimigos e obstáculos marcados.</div>
+								<div class="Slinha"></div>
+								<div class="Snome"> SWORD</div>
+						</center>
+							<div class="Sicon">
+								<center>
+									<img src="imagens/habilidades/swordIcon.png" height="55"/>	
+								</center>
+							</div>
+						</div>
+					</td>
+					<td>
+					<div class="Smolde">
+						<center>
+								<div class="Sbase"></div>
+								<div class="Simagem">
+									<img id="imagemSuper" src="imagens/habilidades/SuperSnow.png" height="160" />				
+								</div>
+								<div class="descricao">Dá a Kirby a capacidade de se tornar uma grande bola de neve que pode rolar e pular</div>
+								<div class="Slinha"></div>
+								<div class="Snome">Snow</div>
+						</center>
+							<div class="Sicon">
+								<center>
+									<img src="imagens/habilidades/snowIcon.png" height="50"/>	
+								</center>
+							</div>
+						</div>
+					</td>
+					<td>
+					<div class="Smolde">
+						<center>
+								<div class="Sbase"></div>
+								<div class="Simagem">
+									<img id="imagemSuper" src="imagens/habilidades/SuperFlame.png" height="160" />				
+								</div>
+								<div class="descricao">Dá a Kirby a capacidade de invocar um dragão de fogo que voa horizontalmente.</div>
+								<div class="Slinha"></div>
+								<div class="Snome">Flame</div>
+						</center>
+							<div class="Sicon">
+								<center>
+									<img src="imagens/habilidades/fireIcon.png" height="55"/>	
+								</center>
+							</div>
+						</div>
+					</td>
+					<td>
+					<div class="Smolde">
+						<center>
+								<div class="Sbase"></div>
+								<div class="Simagem">
+									<img id="imagemSuper" src="imagens/habilidades/SuperBeam.png" height="160" />				
+								</div>
+								<div class="descricao">Ele permite que Kirby controle livremente uma bola elétrica.</div>
+								<div class="Slinha"></div>
+								<div class="Snome">Beam</div>
+						</center>
+							<div class="Sicon">
+								<center>
+									<img src="imagens/habilidades/beamIcon.png" height="55"/>	
+								</center>
+							</div>
+						</div>
+					</td>
+				</tr>	
+		</table>
+	</center>
+	<center>
+		<a href="index.html">
+			<div id="voltar">VOLTAR</div>
+		</a>
+	</center>
+</body>
+</html>
